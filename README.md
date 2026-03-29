@@ -24,18 +24,6 @@ This project develops an Artificial Neural Network (ANN) to predict chromium (Cr
 - final_cleaned_dataset_v2.xlsx
   Dataset used for training.
 
-- ANN_Predictions_v3.xlsx
-  Output file containing actual and predicted values.
-
-- ann_removal_model_v3.keras
-  Saved trained ANN model.
-
-- preprocessor_v3.pkl
-  Saved preprocessing pipeline used for encoding and scaling inputs.
-
-- y_scaler_v3.pkl  
-  Saved scaler used to convert predicted output back to original scale.
-
 ## Requirements
 
 Install these libraries before running the scripts:
@@ -56,7 +44,8 @@ pip install pandas numpy matplotlib tensorflow scikit-learn joblib openpyxl
   this will save the trained model and preprocessing files and generate prediction and plot files
 
 - 3 ) Run the prediction
-  After training is complete, Open predict_ann_v3.py and edit the values inside with your values:
+  After training is complete
+  Open predict_ann_v3.py and edit the values inside with your values:
   ```bash
   new_data = pd.DataFrame([{
     "Adsorbent": "WSB",
